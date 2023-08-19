@@ -1,0 +1,278 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    flex-basis: 100%;
+    height: 400px;
+    box-sizing: content-box;
+    margin: 0px;
+    background-image: url('desktop/image-header.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+header label{
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header nav {
+    text-align: right;
+    position: relative;
+    bottom: 35px;
+}
+header nav ul li{
+list-style-type: none;
+display: inline-block;
+padding-right: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+header nav ul li a:hover{
+    color: #6c757d;
+    font-weight: bold;
+}
+header nav ul li .contact{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 7px;
+    text-transform: uppercase;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    }
+    .contact:hover{
+        color: white;
+        background-color: #6c757d;
+    }
+   
+    header h1{
+        color: white;
+        text-align: right;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    header p{
+        text-align: center;
+    }
+    .un{
+      flex-basis:50%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    .deux{
+        flex-basis: 50%;
+        background-image: url('desktop/egg.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      .trois{
+        flex-basis:50%;
+        background-image: url('desktop/calice_rose.jpg');
+        background-position: center;
+        background-size: cover;
+      }
+      .quatre{
+          flex-basis: 50%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          text-align: center;
+        }
+        .cinq{
+            flex-basis:50%;
+            background-image: url('desktop/image_pomme.jpg');
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            padding-top: 200px;
+          }
+        .six{
+             flex-basis: 50%;
+             background-image: url('desktop/image-photography.jpg');
+             background-position: center;
+             background-size: cover;
+             text-align: center;
+             padding-top:200px;
+             }
+             .learn{
+                 text-decoration: underline;
+                 font-weight: bold;
+                 font-family: 'Times New Roman', Times, serif;
+                 text-decoration-color: #ffc107;
+                 font-size: 0.7em;
+             }
+             .learn1{
+                text-decoration: underline;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                text-decoration-color:#dc3545;
+                font-size: 0.7em;
+            }
+             .bloc_titre{
+                 flex-basis: 100%;
+                 text-align: center;
+                 padding: 50px;
+             }
+             .bloc_titre h2{
+                 text-transform: uppercase;
+                 letter-spacing: 5px;
+                 color: grey;
+             }
+             content{
+                 flex-basis: 100%;
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: space-evenly;
+                 margin-bottom: 20px;
+             }
+             article p{
+                 text-align: center;
+                 color: gray;
+                 font-weight: bold;
+             }
+             article p img{
+                 border-radius: 50%;
+             }
+             .nom{
+                 font-weight: bold;
+                 font-size: large;
+                 color: black;
+                 padding-top: 20px;
+             }
+             aside.font1{
+                 flex-basis: 25%;
+                 height: 270px;
+                 background-image: url("desktop/footer_milk.jpg");
+                 background-position: center;
+                 background-size: cover;
+             }
+             .font2{
+                flex-basis: 25%;
+                height: 270px;
+                background-image: url("desktop/footer_orange.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .font3{
+                flex-basis: 25%;
+                height: 270px;
+                background-image: url("desktop/footer_cone.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .font4{
+                flex-basis: 25%;
+                height: 270px;
+                background-image: url("desktop/footer_sugger.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            footer{
+                flex: 100%;
+                text-align: center;
+                padding: 40px;
+                background-color: #20c997;
+            }
+            footer label {
+                font-weight: bold;
+                color: #198754;
+                font-size: x-large;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            footer li{
+                display: inline-block;
+                list-style-type: none;
+            }
+            footer li a{
+                text-decoration: none;
+                color:#6c757d;
+                padding: 20px;
+                font-weight: bold;
+            }
+            footer p{
+                padding-top: 30px;
+            }
+            footer p svg{
+                padding: 10px;
+            }
+            @media screen and (max-width: 768px){
+                /*  les codes css pour gérer l'affichages sur le mobile ou téléphone  */
+                header .navigation{
+                    display: none;
+                    }
+                .deux{
+                    flex-basis: 100%;
+                    order:1;
+                    height: 300px;
+                }
+                .un{
+                    flex-basis: 100%;
+                    order:2;
+                    text-align: center;
+                }
+                .trois{
+                    flex-basis: 100%;
+                    order:3;
+                    height: 300px;
+                }
+                .quatre{
+                    flex-basis: 100%;
+                    order:4;
+                    text-align: center;
+                }
+                .cinq{
+                    flex-basis: 100%;
+                    order:5;
+                }
+                .six{
+                    flex-basis: 100%;
+                    order: 6;
+                }
+                .bloc_titre{
+                    flex-basis: 100%;
+                    order:7;
+                }
+                content{
+                    order:8;
+                 }
+                .client1{
+                   flex-basis: 100%;
+                }
+                .client2{
+                  flex-basis: 100%;
+               }
+               .client3{
+                  flex-basis: 100%;
+               }
+               .font1{
+                    flex-basis:50%;
+                    order: 9;
+               }
+               .font2{
+                  flex-basis:50%;
+                  order: 10;
+              }
+              .font3{
+                 flex-basis:50%;
+                 order: 11;
+              }
+             .font4{
+                 flex-basis:50%;
+                 order: 12;
+             }
+                 footer{
+                 order: 13;
+             }
+                footer p{
+                 padding: 10px;
+               }
+         }
